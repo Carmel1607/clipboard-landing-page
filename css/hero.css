@@ -1,0 +1,61 @@
+section.hero{
+    height: 20em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--Gray500);
+    font-weight: 400;
+    gap: 20px;
+    background:
+    linear-gradient(to bottom, rgba(255,255,255,0) 50%, white 100%), 
+    url(/images/bg-header-desktop.png)center/cover no-repeat;
+}
+
+section.hero .hero-title{
+    color: var(--Gray700);
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 10px;
+   
+}
+
+._button{
+     transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+._button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero-icon{
+    height: 60px;
+}
+.hero-icon img{
+    height: 100%;
+}
+
+.ios{
+    padding:12px;
+    background-color: var(--Green500);
+    color: #FFF;
+    border-radius: 50px;
+    box-shadow: 0 8px 15px rgba(42, 207, 207, 0.4);
+    cursor: pointer;
+}
+
+.mac{
+    padding: 12px;
+    background-color: var(--Blue100);
+    color: #FFF;
+    border-radius: 50px;
+    box-shadow: 0 8px 15px rgba(59, 48, 84, 0.4);
+    cursor: pointer;
+}
