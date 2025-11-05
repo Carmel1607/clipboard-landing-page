@@ -17,6 +17,7 @@ body{
     font-family: 'Bai Jamjuree';
     display: flex;
     flex-direction: column;
+    align-items: center;
     font-size: 18px;
     min-height: 100vh;
 }
@@ -32,7 +33,7 @@ body{
 
 
 .main{
-    padding: 4em;
+    padding: 7em;
     margin: 24px 0;
     display: flex;
     flex-direction: column;
@@ -66,6 +67,9 @@ body{
 }
 .image-text .image1{
     width: 30em;
+    position: relative;
+    left: -10em;
+    overflow: hidden;
 }
 .image-text .image1 img{
     width: 100%;
@@ -85,7 +89,8 @@ body{
 .image-text .text-detail {
     display: flex;
    flex-direction: column;
-   gap: 20px;
+   position: relative;
+   left: -10em;
    
 }
 .fisrt-section{
@@ -215,7 +220,8 @@ footer .grid-footer{
 
 }
 
-@media(max-width: 48em){
+@media (max-width: 48em){
+
     .hero-buttons{
         display: flex;
         flex-direction: column;
@@ -243,5 +249,12 @@ footer .grid-footer{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .image-text .image1{
+        position: static;
+        width: 20em;
+    }
+    .image-text .text-detail{
+        position: static;
     }
 }
